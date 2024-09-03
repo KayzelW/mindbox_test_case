@@ -1,4 +1,6 @@
-﻿namespace Geometry;
+﻿using Geometry.Interfaces;
+
+namespace Geometry;
 
 public class Circle : IShape
 {

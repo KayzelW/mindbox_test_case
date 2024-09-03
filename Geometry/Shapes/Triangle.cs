@@ -1,4 +1,6 @@
-﻿namespace Geometry;
+﻿using Geometry.Interfaces;
+
+namespace Geometry;
 
 public class Triangle : IShape
 {
@@ -6,7 +8,9 @@ public class Triangle : IShape
     public double SideB { get; }
     public double SideC { get; }
 
-    // deviation with float/double numbers
+    /// <summary>
+    /// deviation with float/double numbers
+    /// </summary>
     private const double Epsilon = 1e-10;
 
     public Triangle(double sideA, double sideB, double sideC)
@@ -22,9 +26,7 @@ public class Triangle : IShape
         SideC = sideC;
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
+
     /// <returns>double Area of a Triangle</returns>
     public double CalculateArea()
     {
@@ -35,7 +37,6 @@ public class Triangle : IShape
     /// <summary>
     /// checks using the Pythagorean theorem
     /// </summary>
-    /// <returns></returns>
     public bool IsRightTriangle()
     {
         double[] sides = [SideA, SideB, SideC];

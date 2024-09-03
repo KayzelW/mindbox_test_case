@@ -1,4 +1,5 @@
 using Geometry;
+using Geometry.Interfaces;
 
 namespace TestProject1;
 
